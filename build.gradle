@@ -1,3 +1,10 @@
+buildscript {
+	ext {
+		keycloackBomVersion = "25.0.3"
+		keycloackVersion = "26.0.4"
+	}
+}
+
 plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.4.1'
@@ -24,8 +31,18 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.postgresql:postgresql:42.7.5'
+
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.4.1'
+	implementation 'org.springframework.boot:spring-boot-starter-security:3.4.1'
+
+	implementation "org.keycloak.bom:keycloak-adapter-bom:$keycloackBomVersion"
+	implementation "org.keycloak:keycloak-spring-boot-starter:$keycloackBomVersion"
+	implementation "org.keycloak:keycloak-admin-client:$keycloackVersion"
+	implementation "org.keycloak:keycloak-authz-client:$keycloackVersion"
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
