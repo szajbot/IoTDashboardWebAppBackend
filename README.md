@@ -5,3 +5,5 @@
  - Przygotować i skonigurować keycloack do autoryzacji
 
 https://github.com/ali-bouali/keycloak-integration-with-spring-boot-3/blob/main/docker-compose.yml
+
+https://www.youtube.com/watch?v=vmEWywGzWbA
