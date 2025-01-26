@@ -9,12 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DashoboardBackendApplication {
 
-	@GetMapping("/test")
-	public String returnTestEndpoint() {
-		return "Hello World";
-	}
-
-
 	public static void main(String[] args) {
 		SpringApplication.run(DashoboardBackendApplication.class, args);
 	}

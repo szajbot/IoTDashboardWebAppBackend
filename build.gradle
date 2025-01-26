@@ -34,19 +34,11 @@ dependencies {
 	implementation 'org.postgresql:postgresql:42.7.5'
 
 	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.springframework.boot:spring-boot-starter-parent:2.7.4'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.4'
-	implementation 'org.springframework.boot:spring-boot-starter-security:5.7.2'
-	implementation "org.springframework.security:spring-security-web:$springSecurityVersion"
-	implementation "org.springframework.security:spring-security-config:$springSecurityVersion"
-	implementation "org.springframework.security:spring-security-core:$springSecurityVersion"
-	implementation "org.springframework.security:spring-security-test:$springSecurityVersion"
-
-	implementation "org.keycloak:keycloak-spring-boot-starter:$keycloackVersion"
-	implementation "org.keycloak.bom:keycloak-adapter-bom:$keycloackVersion"
-	implementation "org.keycloak:keycloak-admin-client:$keycloackVersion"
-	implementation "org.keycloak:keycloak-authz-client:$keycloackVersion"
+	implementation 'org.springframework.boot:spring-boot-starter-parent:3.0.6'
+	implementation 'org.springframework.boot:spring-boot-starter-web:3.4.2'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.4.2'
+	implementation 'org.springframework.boot:spring-boot-starter-security:3.4.2'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server:3.1.12'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
