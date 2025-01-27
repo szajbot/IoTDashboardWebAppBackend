@@ -1,0 +1,42 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9090/realms/Dashboard
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+server:
+  port: 8081
+
+jwt:
+  auth:
+    converter:
+      resource-id: backend-rest-api
+      principle-attribute: preferred_username
+
+keycloak:
+  resource: backend-rest-api
+  bearer-only: true
+  auth-server-url: http://localhost:9090
+  realm: Dashboard
+  credentials:
+    secret: f4JzU1Fojz0Q14KLJ6gJVhV3JTWtRjU7
+
+#spring.application.name=DashoboardBackend
+#
+#spring.datasource.url=jdbc:postgresql://localhost:5433/postgres
+#spring.datasource.username=postgres
+#spring.datasource.password=postgres
+#
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect
+#spring.jpa.properties.hibernate.jdbc.lob.non_contectual_creation=true
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true
+#
+#keycloak.realm=master
+#keycloak.auth-server-url=http://localhost:8080/auth
+#keycloak.ssl-required=external
+#keycloak.resource=api
+#keycloak.use-resource-role-mappings=true
+#keycloak.bearer-only=true
+#keycloak.credentials.secret=IcOtCApwZFlG4mMFjg9qGFVAVaimXqCh

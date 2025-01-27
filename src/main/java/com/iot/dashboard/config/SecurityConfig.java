@@ -1,4 +1,4 @@
-package com.iot.DashoboardBackend.config;
+package com.iot.dashboard.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -25,7 +25,7 @@ public class SecurityConfig {
                 .disable()
                 .authorizeHttpRequests()
                 .anyRequest()
-                .authenticated();
+                .permitAll();
 
         http
                 .oauth2ResourceServer()

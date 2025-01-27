@@ -1,10 +1,10 @@
-package com.iot.DashoboardBackend;
+package com.iot.dashboard;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DashoboardBackendApplicationTests {
+class DashboardApplicationTests {
 
 	@Test
 	void contextLoads() {

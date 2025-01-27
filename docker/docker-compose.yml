@@ -1,3 +1,7 @@
+volumes:
+  postgres_data:
+    driver: local
+
 services:
   keycloak:
     container_name: keycloak
@@ -9,3 +13,15 @@ services:
       - "9090:8080"
     command:
       - "start-dev"
+
+#  db:
+#    image: postgres:latest
+#    container_name: db.oxl
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/db
+#    environment:
+#      POSTGRES_DB: postgres
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: postgres
+#    ports:
+#      - 5433:5432
