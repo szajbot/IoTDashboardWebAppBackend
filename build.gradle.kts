@@ -29,8 +29,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
-	implementation("org.keycloak:keycloak-admin-client:25.0.6")
-	implementation("org.keycloak:keycloak-authz-client:25.0.6")
+	implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
 	compileOnly("org.projectlombok:lombok")
 //	runtimeOnly("org.postgresql:postgresql")

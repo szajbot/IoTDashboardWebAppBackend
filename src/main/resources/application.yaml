@@ -20,7 +20,7 @@ keycloak:
   auth-server-url: http://localhost:9090
   realm: Dashboard
   credentials:
-    secret: f4JzU1Fojz0Q14KLJ6gJVhV3JTWtRjU7
+    secret: xImcIt9lww1aqTQugWJqDrjIlXl3od8f
 
 #spring.application.name=DashoboardBackend
 #
